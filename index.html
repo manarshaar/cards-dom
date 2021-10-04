@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Manar</title>
+</head>
+
+<body>
+    <header>
+        <h1>DOM</h1>
+    </header>
+    <div class="main_container container">
+
+        <form action="display.html" class="input_section grid">
+
+            <div class="card_inputs grid">
+                <input type="text" name="card_title" id="card_title" placeholder="Title">
+                <span>This field is required.</span>
+                <input type="text" name="card_desc" id="card_desc" placeholder="Description">
+                <span>This field is required.</span>
+                <input type="date" name="card_date" id="card_date" placeholder="Date">
+                <span>This field is required.</span>
+            </div>
+
+            <div class="card_buttons grid">
+                <button class="add_cards">Add</button>
+                <button class="clear_inputs">Clear</button>
+                <button class="submit_cards">Display</button>
+                <button id="summary_cards">Summary</button>
+            </div>
+
+            <div id="msg"></div>
+        </form>
+
+        <section class="display_section">
+            <div class="cards_display grid">
+                <div class="display_card">
+                    <div class="edit_card_buttons grid">
+                        <input type="checkbox" name="checkbox3" id="checkbox3">
+                        <button class="edit_save_btn">Edit</button>
+                    </div>
+                    <div class="card_details grid">
+                        <h3 class="display_title">Card 1</h3>
+                        <p class="display_desc">card desc..</p>
+                        <input type="date" class="display_date" disabled>
+                        <input type="hidden" id="id" name="id" value="-">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="delete_buttons grid">
+                <button class="delete_all">Delete All</button>
+                <button class="delete_selected">Delete Selected</button>
+            </div>
+        </section>
+
+    </div>
+
+    <footer></footer>
+    <script src="index.js"></script>
+</body>
+
+</html>

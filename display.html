@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Summary</title>
+</head>
+
+<body>
+    <header><h1>Summary</h1></header>
+    <button onclick="back()" style="background-color: lightgrey;
+    padding: 20px;">Return</button>
+    <div class="main_container container">
+        <div id="write"></div>
+    </div>
+    
+    <script>
+
+        const back = () => {
+            window.history.back();
+        };
+
+        let cards = JSON.parse(sessionStorage.getItem("cards"));
+        let cardsDetails = `<pre>
+              `;
+        cards.forEach((card,i) => {
+            cardsDetails += `
+            Card ${i+1}:
+                title: ${card.title}
+                description: ${card.description}
+                date: ${card.date}
+
+            `;
+        });
+
+        //console.log(cards);
+        document.getElementById("write").innerHTML = cardsDetails;
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+/* Display Section */
+.display_section{
+    visibility: hidden;
+    border-top: 1px solid grey;
+    padding: 60px;
+}
+
+.display_section > .cards_display{
+    grid-template-columns: 50% 50%;
+    grid-row-gap: 30px;
+}
+
+.display_section > .delete_buttons{
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 40px;
+    margin-top: 50px;
+}
+
+.display_section .display_card{
+    place-self: center;
+    background-color: var(--secondary-color2);
+    padding: 20px;
+    width: 350px;
+}
+
+.display_section .display_card > .edit_card_buttons{
+    grid-template-columns: 85% 15%;
+    padding-bottom: 10px;
+}
+
+.display_section .display_card .card_details{
+  gap: 10px;
+}
+
+.display_section .display_card .card_details > h3{
+    padding: 15px;
+    text-align: center;
+    border-top: 1px solid #beb4b4;
+}
+
+.display_section .display_card > input[type=date]{
+    padding-left: 10px;
+}
+
+.display_section > .delete_buttons > button{
+  width: 150px;
+  background-color: var(--secondary-color1);
+  place-self: center;
+  color: white;
+  padding: 4px;
+}

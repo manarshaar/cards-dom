@@ -1,0 +1,45 @@
+/* Input Section */
+.input_section {
+    grid-template-columns: auto auto;
+    grid-column-gap: 20px;
+    padding: 30px 50px 80px 50px;
+  }
+  
+  .input_section input {
+    height: 50px;
+    max-width: 300px;
+    margin: 15px;
+    padding: 10px;
+  }
+
+  .input_section .card_inputs span{
+    margin-left: 15px;
+    font-size: 13px;
+    color: red;
+    display: none;
+  }
+  
+  .input_section .card_buttons > button {
+    height: 25px;
+    width: 80px;
+    background-color:var(--primary-color);
+    color: white;
+    margin: 4px 2px;
+    place-self: center;
+  }
+  
+  .card_buttons{
+      grid-template-rows: auto auto auto;
+  }
+
+  .card_buttons > #summary_cards{
+    background-color: brown;
+  }
+  
+  #msg{
+      margin-left: 15px;
+      width: fit-content;
+      border-bottom: 1px solid grey;
+      color: grey;
+  }
+  

@@ -1,0 +1,37 @@
+@import "./css/header.css";
+@import "./css/input_section.css";
+@import "./css/display_section.css";
+@import "./css/footer.css";
+
+:root {
+  --primary-color: rgb(41, 59, 66);
+  --secondary-color1: rgb(201, 181, 181);
+  --secondary-color2: #d7dbdf;
+}
+
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.grid {
+  display: grid;
+}
+
+.container{
+  max-width: 900px;
+  margin: auto;
+}
+
+button{
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 100px;
+}
+
+
+
+
